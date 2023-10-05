@@ -1,0 +1,103 @@
+name: budget_buddie
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # :::::::::: Start Depandency added by developer
+  
+  get: ^4.6.5                                # State Management and many more...
+  http: ^0.13.0                              # API Request
+  intl: ^0.18.1                              # Date time Formate
+  flutter_easyloading: ^3.0.5                # Loader
+  get_storage: ^2.1.1                        # StoreData Locally 
+  flutter_svg: ^2.0.7                        # Svg pictures
+  sizer: ^2.0.15                             # for device Size and responsive Layout
+  fl_chart: ^0.63.0                          # All Charts
+  flutter_staggered_animations: ^1.1.1       # animated List view
+  persistent_bottom_nav_bar: ^5.0.2          # for Persistent bottom navigation bar 
+  local_auth: ^2.1.6                         # Face authentication
+  dotted_border: ^2.0.0+3                    # Container Border
+  image_picker: ^1.0.2                       # Pick Image From Gallary
+  table_calendar: ^3.0.9                     # Calendar
+  flutter_inappwebview: ^5.7.2+3             # In App WebView
+  url_launcher: ^6.1.12                      # Open mail
+  flutter_slidable: ^3.0.0                   # Slidable ListView
+  google_fonts: ^5.1.0                       # For Google fonts
+  purchases_flutter: ^5.6.4                  # For In app purchase revenue cat
+  google_sign_in: ^6.1.4                     # For Google Login
+  fluttertoast: ^8.2.2                       # For Show Message
+  open_mail_app: ^0.4.5                      # For Open Main App
+  intl_phone_field: ^3.2.0                   # For Get All Country Code
+  shimmer: ^3.0.0                            # Get Effectable after Load a Data
+
+
+  # ::::::::::: End :::::::::::::::
+  
+
+  cupertino_icons: ^1.0.2
+
+dependency_overrides:
+  http: ^0.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/pngs/app_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  macos:
+    generate: true
+    image_path: "assets/pngs/app_logo.png"
+
+
+flutter:
+  uses-material-design: true
+
+  
+  assets:
+    - assets/icons/
+    - assets/svgs/
+    - assets/pngs/
+    - assets/fonts/Inter-Regular.ttf
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
